@@ -1,0 +1,204 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPgjp68FFuEjL+MPVOZCfxI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/debizson/Mesi/blob/main/basic_language_elements\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4racx4FuPPwH",
+        "outputId": "7e726f70-a21d-4cba-e406-7201ded4eb2e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x=10\n",
+            "Addition: x+2 = 12\n",
+            "Subtraction: x - 2 = 8\n",
+            "Division: x/2= 5.0\n",
+            "Floor division: x//2 =  5\n",
+            "Modulus: x%2 = 0\n",
+            "Exponentiation: x^2 100\n"
+          ]
+        }
+      ],
+      "source": [
+        " x = 10\n",
+        " x\n",
+        "\n",
+        " print(f\"x={x}\")\n",
+        " print(\"Addition: x+2 =\", x + 2)\n",
+        " print(\"Subtraction: x - 2 =\", x - 2)\n",
+        " print(\"Division: x/2=\", x / 2)\n",
+        " print(\"Floor division: x//2 = \", x // 2)\n",
+        " print(\"Modulus: x%2 =\", x % 2)\n",
+        " print(\"Exponentiation: x^2\", x**2)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(x > 5) # Pyton logical Operators: <, <=, >=, ==, !=, and, or, not"
+      ],
+      "metadata": {
+        "id": "7JoRlqr4TMZA",
+        "outputId": "01c0acf4-a53e-4725-f3cb-668b86c7c230",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list_ = [12, 4, 5, 8, 9] # list\n",
+        "tuple_ = (12, 4, 6, 8, 9) # tuple\n",
+        "dictionary_ = {'first': 12, 'second': 5, 'third': -66} # dictionary or map\n",
+        "set_ = {3, 0, 1, 0, 3, 2, -3} # set\n",
+        "dictionary_\n",
+        "tuple_"
+      ],
+      "metadata": {
+        "id": "S_toF9srTfOq",
+        "outputId": "7eb67474-76e4-4999-ec73-190def2c7fad",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(12, 4, 6, 8, 9)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "[ i for i in range(5)]\n",
+        "[ i for i in range(3, 35, 4)]"
+      ],
+      "metadata": {
+        "id": "isdfcJ2KTiCm",
+        "outputId": "1e1a1a55-0327-491e-a3b7-bd641225adc8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[3, 7, 11, 15, 19, 23, 27, 31]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a =  []\n",
+        "for i in range(5):\n",
+        "      a.append(i)\n",
+        "a"
+      ],
+      "metadata": {
+        "id": "_xB8BYjqX2sa",
+        "outputId": "6a93e18f-dbfb-4525-d192-6afa3a122740",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "[i for i in range(3, 10, 3)]"
+      ],
+      "metadata": {
+        "id": "RGCCzuiTZZkx",
+        "outputId": "23648e7e-ace5-4799-c4ac-ebb221f320be",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[3, 6, 9]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    }
+  ]
+}
